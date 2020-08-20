@@ -8,11 +8,12 @@ public class Boss{
 
 	//魔法攻撃用の関数
 	public void Magic(){
-		//残りmpを減らす
-		this.mp -= 5;
 
-		if (this.mp >= 3) {
+		if (this.mp >= 5) {
 			//mpが5以上の場合
+			//残りmpを減らす
+			this.mp -= 5;
+			//残りmpを表示
 			Debug.Log ("魔法攻撃をした。残りMPは" + this.mp + "。");
 		} else {
 			//mpが5未満の場合
